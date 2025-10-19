@@ -116,4 +116,5 @@ All colors MUST be HSL.
     pointer-events: none !important; 
     position: absolute !important; 
     z-index: -9999 !important; 
+  }
 }
