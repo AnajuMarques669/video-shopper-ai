@@ -63,49 +63,12 @@ All colors MUST be HSL.
     background: var(--gradient-bg);
     font-feature-settings: "rlig" 1, "calt" 1;
   }
-}
 
-@layer utilities {
-  .text-gradient {
-    background: var(--gradient-primary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
+} 
 
-  .glow-primary {
-    box-shadow: var(--shadow-glow);
-  }
-
-  .animate-fade-in {
-    animation: fadeIn 0.5s ease-in;
-  }
-
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(10px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  .animate-pulse-slow {
-    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-  }
-
-  @keyframes pulse {
-    0%, 100% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0.5;
-    }
-  }
 
   /* Hide Lovable badge */
+  a[href="lovable.dev"], iframe[src="lovable.dev"], div[style="Edit with Lovable"], .lovable-badge { display: none !important; opacity: 0 !important; visibility: hidden !important; pointer-events: none !important; position: absolute !important; z-index: -9999 !important; }
   a[href="lovable.dev"], 
   iframe[src="lovable.dev"], 
   div[style="Edit with Lovable"], 
@@ -116,5 +79,5 @@ All colors MUST be HSL.
     pointer-events: none !important; 
     position: absolute !important; 
     z-index: -9999 !important; 
-  }
+  
 }
